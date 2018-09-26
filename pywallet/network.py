@@ -9,9 +9,10 @@ class BitcoinGoldMainNet(object):
     EXT_SECRET_KEY = 0x0488ADE4  # Used to serialize private BIP32 addresses
     BIP32_PATH = "m/44'/0'/0'/"
 
-
 class BitcoinCashMainNet(object):
-    """Bitcoin Cash MainNet version bytes."""
+    """Bitcoin Cash MainNet version bytes.
+    https://github.com/Bitcoin-ABC/bitcoin-abc/blob/master/src/chainparams.cpp
+    """
     NAME = "Bitcoin Cash Main Net"
     COIN = "BCH"
     SCRIPT_ADDRESS = 0x05  # int(0x05) = 5
@@ -19,8 +20,7 @@ class BitcoinCashMainNet(object):
     SECRET_KEY = 0x80      # int(0x80) = 128  # Used for WIF format
     EXT_PUBLIC_KEY = 0x0488B21E  # Used to serialize public BIP32 addresses
     EXT_SECRET_KEY = 0x0488ADE4  # Used to serialize private BIP32 addresses
-    BIP32_PATH = "m/44'/145'/0'/"
-
+    BIP32_PATH = "m/44'/0'/0'/"
 
 class DashMainNet(object):
     """Dash MainNet version bytes."""
@@ -32,7 +32,6 @@ class DashMainNet(object):
     EXT_PUBLIC_KEY = 0X0488B21E  # Used to serialize public BIP32 addresses
     EXT_SECRET_KEY = 0X0488ADE4  # Used to serialize private BIP32 addresses
     BIP32_PATH = "m/44'/5'/0'/"
-
 
 class DashTestNet(object):
     """Dash TestNet version bytes."""
@@ -110,7 +109,6 @@ class BitcoinTestNet(object):
     EXT_SECRET_KEY = 0x04358394
     BIP32_PATH = "m/44'/1'/0'/"
 
-
 class LitecoinMainNet(object):
     """Litecoin MainNet version bytes
 
@@ -165,7 +163,6 @@ class LitecoinTestNet(object):
 
     BIP32_PATH = "m/44'/1'/0'/"
 
-
 class DogecoinMainNet(object):
     """Dogecoin MainNet version bytes
 
@@ -186,7 +183,6 @@ class DogecoinMainNet(object):
     EXT_PUBLIC_KEY = 0x02facafd
     EXT_SECRET_KEY = 0x02fac398
     BIP32_PATH = "m/44'/3'/0'/"
-
 
 class DogecoinTestNet(object):
     """Dogecoin TestNet version bytes
@@ -209,7 +205,6 @@ class DogecoinTestNet(object):
     EXT_SECRET_KEY = 0x0432a243
     BIP32_PATH = "m/44'/1'/0'/"
 
-
 class BlockCypherTestNet(object):
     """BlockCypher TestNet version bytes.
     From http://dev.blockcypher.com/#testing
@@ -222,7 +217,6 @@ class BlockCypherTestNet(object):
     EXT_PUBLIC_KEY = 0x2d413ff  # Used to serialize public BIP32 addresses
     EXT_SECRET_KEY = 0x2d40fc3  # Used to serialize private BIP32 addresses
     BIP32_PATH = "m/44'/1'/0'/"
-
 
 class QtumMainNet(object):
     """Qtum MainNet version bytes
@@ -238,7 +232,6 @@ class QtumMainNet(object):
     EXT_PUBLIC_KEY = 0x0488B21E  # Used to serialize public BIP32 addresses
     EXT_SECRET_KEY = 0x0488ADE4  # Used to serialize private BIP32 addresses
     BIP32_PATH = "m/44'/88'/0'/"
-
 
 class QtumTestNet(object):
     """Qtum TestNet version bytes
